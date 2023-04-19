@@ -2,8 +2,6 @@ import datetime as dt
 import os
 import win32com.client
 
-#testing testing testing
-
 def run():
     today = dt.datetime.today()
     year = today.strftime('%Y')
