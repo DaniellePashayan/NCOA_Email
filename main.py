@@ -18,7 +18,8 @@ def run():
 
     outlook = win32com.client.Dispatch("Outlook.Application")
     message = outlook.CreateItem(0)
-    message.To = "DEnglish2@northwell.edu, dpashayan@northwell.edu"
+    message.To = "DEnglish2@northwell.edu"
+    message.CC = "dpashayan@northwell.edu"
     message.Body = f"There is currently a file in the NCOA folder for the bot to work. The file names are: \n {files}"
     message.Subject = "NCOA - Files for Bot"
     message.Send()
